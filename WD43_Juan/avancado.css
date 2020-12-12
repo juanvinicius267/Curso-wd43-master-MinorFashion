@@ -1,0 +1,117 @@
+/* Grunt,gulp,Brocolli,Webpack -- ferramentas para deixar a pagina agil*/
+
+/* Seletor de irmao - do proximo ou adjacente*/
+article h1 + p + p{
+    background-color: yellow;
+}
+/* Seletor de irmao */
+/* Pega todos os elementos apos o H1 que for P */
+article h1 ~ p {
+    border: 1px solid;
+}
+/* Seletor de filho direto */
+/* Pega apenas os itens que é filho direto - so pega o section que tem o H1 direto */
+section >h1{
+    text-transform: uppercase;
+
+}
+section nav a{
+    color: green;
+}
+/* Seletor de negacao */
+/* Criar uma excessao */
+.site-container h1:not(.header-logo){
+    display: none;
+}
+/* pseudo classe */
+header li{
+    border-top: 5px solid red;
+}
+header li:first-child{
+    border-top: 5px solid green;
+}
+header li:last-child{
+    border-top: 5px solid orange;
+}
+header li:nth-child(4){
+    border-top: 5px solid yellow;
+}
+header li:nth-child(2n){
+   background-color: silver;
+}
+header li:nth-child(2n + 1){
+    background-color: rgb(99, 62, 62);
+ }
+ header a{
+      display: block;
+ }
+ /* pseudoelementos */
+p::first-letter{
+    font-size: 2em;
+}
+p::first-line{
+    color: red;
+    font-weight: bold;
+}
+section nav a::before {
+    content: "\2707";
+}
+section nav a::after{
+    content: "]";
+}
+figcaption{
+    border-radius: 25px  0;
+    box-shadow:  15px 15px 10px blue,-15px -15px 10px red;
+}
+article h1{
+    display: block !important;
+    text-shadow: 10px 10px 5px black;
+
+}
+section{
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(211deg, rgba(2,0,36,1) 16%, rgba(9,121,43,1) 45%, rgba(0,212,255,1) 75%);
+    background: -webkit-linear-gradient(211deg, rgba(2,0,36,1) 16%, rgba(9,121,43,1) 45%, rgba(0,212,255,1) 75%);
+    background: linear-gradient(211deg, rgba(2,0,36,1) 16%, rgba(9,121,43,1) 45%, rgba(0,212,255,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+}
+.header-logo a{
+    transition: 0.5s ease ;
+    transform: skewX(20deg);
+}
+.header-logo a:hover{
+    transform: scale(1.5) rotate(180deg) translateX(272px);
+    transition: 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

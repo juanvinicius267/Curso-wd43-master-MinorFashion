@@ -1,0 +1,85 @@
+body{
+    font: 100%/1.5 arial;
+}
+header,footer{
+    min-height: 150px;
+    background: orange;
+}
+main{
+    min-height: 800px;
+    background: silver;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2em;
+    text-align: center;
+    line-height: 2;
+}
+header li{
+    border-bottom: 2px solid black;
+    text-align: center;
+    background: yellow;
+    color: blue;
+    text-decoration: none;
+    display: block;
+    line-height: 2;
+}
+header li a{
+    color: inherit;
+    text-decoration: inherit;
+    display: inherit;
+}
+header li:active{
+    background-color: orange;
+    color: black;
+}
+header li a:active{
+    background-color: inherit;
+    color: inherit;
+}
+header li:first-child{
+    border-top: 2px solid black ;
+}
+@media print{
+    header nav{
+        display: none;
+    }
+
+
+}
+@media screen and (min-width:768px){
+    header li{
+        display: inline-block;
+        border-top: 2px solid black;
+        float: left;
+        /* tamanho do menu 128px/ tamanho da pagina 768px = 0.16666x100% = valor em porcentagem 16.66% */
+        width: 16.66%;
+    }
+
+
+
+}
+@media screen and (min-width:1024px){
+    header h1{
+        text-align: left;
+    }
+}
+/* and (orientation: portrait)
+and (orientation: landspace) */
+
+
+
+
+
+
+
+
+
+
+
+
+

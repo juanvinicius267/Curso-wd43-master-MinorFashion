@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Overview.css">
+    <title>Overview HTML5</title>
+</head>
+
+<body>
+    <h1 class="titulo">Overview HTML5</h1>
+    <hr>
+    <h2 >Trabalhando com textos</h2>
+
+    <p>Lorem <b>ipsum</b> dolor sit <strong>amet</strong> consectetur <i>adipisicing</i> elit.
+        Harum <cite>facilis</cite>, vero quasi praesentium eaque <em>dignissimos</em> impedit <u>distinctio</u>
+        cupiditate hic.
+        <mark>Dolor</mark> repellat <q>iusto</q> autem <del> magnam</del> laborum! <ins>Vero</ins> <sup> possimus</sup>
+        <sub>voluptatem</sub> molestiae ipsa.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Harum facilis, vero quasi praesentium eaque dignissimos impedit distinctio cupiditate hic.
+        Dolor repellat iusto autem magnam laborum! Vero possimus voluptatem molestiae ipsa.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Harum facilis, vero quasi praesentium eaque dignissimos impedit distinctio cupiditate hic.
+        Dolor repellat iusto autem magnam laborum! Vero possimus voluptatem molestiae ipsa.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Harum facilis, vero quasi praesentium eaque dignissimos impedit distinctio cupiditate hic.
+        Dolor repellat iusto autem magnam laborum! Vero possimus voluptatem molestiae ipsa.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Harum facilis, vero quasi praesentium eaque dignissimos impedit distinctio cupiditate hic.
+        Dolor repellat iusto autem magnam laborum! Vero possimus voluptatem molestiae ipsa.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Harum facilis, vero quasi praesentium eaque dignissimos impedit distinctio cupiditate hic.
+        Dolor repellat iusto autem magnam laborum! Vero possimus voluptatem molestiae ipsa.
+    </p>
+
+    <h2 id="lista">Lista </h2>
+    <h3>Ordenadas</h3>
+    <p>Lista de carros mais vendidos em 2019</p>
+    <ol type="A">
+        <!--  I,i,A,1 -->
+        <li>Onix</li>
+        <li>Corolla</li>
+        <li>Hilux</li>
+    </ol>
+
+    <h3>Nâo Ordenadas</h3>
+    <p>Tecnologias que são tendencia em 2019</p>
+    <ul>
+        <li>Python</li>
+        <ul>
+            <li>AWS</li>
+        </ul>
+        <li>C#</li>
+        <li>Node.js</li>
+    </ul>
+
+    <h3>Definição</h3>
+    <p>Explicação</p>
+    <dl>
+        <dt>ONU</dt>
+        <dd>Organização das nações unidas</dd>
+    </dl>
+
+    <h2>Tabelas</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="3">Tabela de cursos</th>
+            </tr>
+            <tr>
+                <td>
+                    Unidade
+                </td>
+                <td>
+                    Curso
+                </td>
+                <td>
+                    Instruror
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    SP
+                </td>
+                <td>
+                    WD-43
+                </td>
+                <td>
+                    LEO
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SP
+                </td>
+                <td>
+                    WD-43
+                </td>
+                <td>
+                    LEO
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SP
+                </td>
+                <td>
+                    WD-43
+                </td>
+                <td>
+                    LEO
+                </td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"> Calendario atualizado em 09/12</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <h2>Imagens</h2>
+    <figure>
+        <img src="http://www.lorempixel.com.br/250/250">
+        <figcaption>http://www.lorempixel.com.br/250/250</figcaption>
+    </figure>
+    <h2>Hipertextos</h2>
+    <p>Link Relativo: <a href="Estrutura.html" target="_blank">Link</a></p>
+    <p>Link Absoluto: <a href="www.uol.com.br" target="_self">Link</a></p>
+    <p>Link Cego: <a href="#">Link</a></p>
+    <p>Link âncora: <a href="#lista">Link</a></p>
+    <p>Link para e-mail:<a href="mailto:sac@caelum.com.br">Sac Caelum</a></p>
+
+    <h2>Iframes</h2>
+    <h3>Uol</h3>
+    <iframe frameborder="0" width="800" height="600" src="https://www.uol.com.br"></iframe>
+    <br>
+    <h3>Youtube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dBxOYE2j55U" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <h3>Google Maps</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14624.331040158486!2d-46.482511483186116!3d-23.601364686834774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce67ce09c1dfbb%3A0x64355630d772e33c!2sCidade%20S%C3%A3o%20Mateus%2C%20S%C3%A3o%20Paulo%20-%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1576022875817!5m2!1sen!2sbr"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+
+
+    <h2>Formularios</h2>
+    <form action="http://www.google.com/search" method="GET">
+        <fieldset>
+            <label>Procurar:</label>
+            <input type="text" name="q"/>
+            <button>Search</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

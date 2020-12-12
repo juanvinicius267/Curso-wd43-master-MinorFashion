@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Conceitos Javascript</h1>
+
+    <p>Escolha o conceito a ser estudado</p>
+    <select id="cboConceito" onchange="myConcept()">
+        <option disabled selected value>Selecione um conceito</option>
+        <option>Variáveis</option>
+        <option>Funções</option>
+        <option>Operadores</option>
+        <option>Condicionais if-else</option>
+        <option>Loops</option>
+        <option>Listas</option>
+    </select>
+
+    <!-- É o usuário que vai definir o conceito a ser estudado -->
+    <script>
+        function myConcept() {
+            var conceito = cboConceito.options[cboConceito.selectedIndex].text
+
+            var js = document.createElement("script");
+            js.type = "text/javascript";
+
+            if (conceito == "Variáveis") {
+                js.src = "js/variaveis.js"
+            } else if (conceito == "Funções") {
+                js.src = "js/funcoes.js"
+            } else if (conceito == "Operadores") {
+                js.src = "/js/operadores.js"
+            } else if (conceito == "Condicionais if-else") {
+                js.src = "js/condicionais_if-else.js"
+            } else if (conceito == "Loops") {
+                js.src = "/js/loops.js"
+            } else {
+                js.src = "/js/listas.js"
+            }
+            document.body.appendChild(js);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+/*
+Seletor de Tag
+*/
+
+h2{
+    border-bottom: 4px double;
+    border-top:4px solid;
+}
+
+/*
+Seletor de classe
+*/
+
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: burlywood;
+    border-bottom: 4px double;
+    border-top:4px solid;
+}
+
+/*
+Seletor de id
+*/
+#lista{
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(231, 200, 159);
+    border-bottom: 4px solid  rgb(16, 106, 112);
+    border-top:4px solid rgb(16, 106, 112);
+    border-left:4px solid  rgb(16, 106, 112);
+    border-right:4px solid rgb(16, 106, 112);
+    font-size: 48px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+.site-container {
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid; */
+    width: 1200px;
+}
+
+header, footer {
+    /* background-color: silver; */
+  
+    height: auto;
+}
+
+main {
+    min-height: 600px;
+}
+
+.header-logo a {
+    /* background-color: yellow; */
+    margin-top: 16px;
+    background-repeat: no-repeat;
+    width: 272px;
+    height: 103px;
+    background-image: url(logo.webp);
+    background-position: left top;
+    /*background-size: contain;*/
+    text-indent: -9000px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.header-menu li {
+    /* border: 1px solid red; */
+    text-align: center;
+    display: block;
+    float: left;
+    width: 200px;
+    line-height: 2;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.header-menu li:hover {
+    background-color: orange;
+    color: black;
+}
+.main-highlight{
+   position: relative;
+
+}
+.main-highlight-title{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 3em;
+    /* display: inline-block; */
+    padding: 16px;
+    position: absolute;
+    bottom: 7px;
+    left:0px;
+    
+    
+}
+section[role=content]{
+   
+    width: 900px;
+    float: left;
+    min-height: 800px;
+    padding:  32px;
+}
+section[role=sidebar]{
+    background-color: red;
+    width: 300px;
+    float: right;    
+    min-height: 800px;
+    padding:  32px;
+    background-color: #dadada;
+}
+.main-highlight-img{
+    display: block;
+}
+article{
+ padding: 0 0 1.5em 0;
+}
+article h1{
+    font-size: 2.5em;
+    
+}
+article p{
+   
+    padding: 0 0 0.5em 0;
+}
+section[role=sidebar] h1{
+    font-size: 2em;
+
+}
+.footer-icons a{
+    border-radius: 5%;
+    width: 98px;
+    height: 98px;
+    background-image: url(icons.png);
+    display: inline-block;
+    background-color: white;
+    text-indent: -90000px;
+    float:left;
+    margin-left: 16px;
+}
+.footer-icons a:hover{
+    border-radius: 5%;
+    width: 98px;
+    height: 98px;
+    background-image: url(icons.png);
+    display: inline-block;    
+    text-indent: -90000px;
+    background-color: white;
+}
+.fb{
+    background-position: -206px -520px;
+}
+.fb:hover{
+    background-position: -206px -714px;
+}
+.ig{
+    background-position: -585px -520px;
+}
+.ig:hover{
+    background-position:-585px -713px;
+}
+.tt{
+    background-position: -407px -520px;
+}
+.tt:hover{
+    background-position: -407px -714px;
+}
+.footer-copy{
+    line-height: 98px;
+    float: left;
+}
+.footer-icons{
+    float: right;
+}
+footer{
+    padding: 2em;
+    background-color: #c7c7c7;
+}
